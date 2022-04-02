@@ -48,7 +48,7 @@ def drawClock():
     t.right(minutes * 6)
     t.forward(80)
 
-   # reset the pen
+    # reset the pen
     t.pensize(1)
     t.penup()
     t.left(180)
