@@ -7,9 +7,9 @@ def getAlarmTime():
     if alarmHour <= 12 or alarmHour >= 1:
         alarmMinutes = int(input("Write an alarm minutes ( from 0 to 59 ): "))
         if alarmMinutes <= 59 or alarmMinutes >= 0:
-            alarmSystem = input("Write an time system ( am or pm ): ").lower()
+            alarmSystem = input("Write a time system ( am or pm ): ").lower()
             if alarmSystem == "am" or alarmSystem == "pm":
-                print(f"Set alarm at {alarmHour}:{alarmMinutes} {alarmSystem.upper()}")
+                print(f"Alarm has been set at {alarmHour}:{alarmMinutes} {alarmSystem.upper()}")
                 return alarmHour, alarmMinutes, alarmSystem
 
 
