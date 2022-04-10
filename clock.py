@@ -4,11 +4,10 @@ import turtle as t
 c_radius = 300
 
 #print the time
-def printTime(hours, minutes, seconds):
-    print( f"{hours:02}:{minutes:02}:{seconds:02}" )
+def printTime(hours, minutes, seconds, system):
+    print( f"{hours:02}:{minutes:02}:{seconds:02} {system}" )
 
 def drawClock(hours, minutes, seconds):
-    printTime(hours, minutes, seconds)
     t.clear()
     drawClockCircle()
     drawClockHours(hours)
